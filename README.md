@@ -6,7 +6,9 @@ VGG transfer learning and Class Activation Mapping
 <br>
 14X14<br>
 ![bee_cam](https://github.com/tony-mtz/CAM/blob/master/images/bee_cam.png)
-Resize to 224x224
+<br>
+Resize to 224x224<br>
 ![bee_resize](https://github.com/tony-mtz/CAM/blob/master/images/bee_cam_resize.png)
-Putting both images together
+<br>
+Putting both images together<br>
 ![overlay](https://github.com/tony-mtz/CAM/blob/master/images/overlay.png)
