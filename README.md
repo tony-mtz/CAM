@@ -10,4 +10,4 @@ The resulting class activation map:<br>
 ![bee_cam](https://github.com/tony-mtz/CAM/blob/master/images/two_ants_cam.png)
 <br>
 Both images together:<br>
-![overlay](https://github.com/tony-mtz/CAM/blob/master/images/overlay.png)
+![overlay](https://github.com/tony-mtz/CAM/blob/master/images/two_ants_overlay.png)
