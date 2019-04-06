@@ -10,19 +10,19 @@ import torch
 import torch.nn as nn
 import numpy as np
 import matplotlib.pyplot as plt
+from torch import Tensor
 
 class Flatten(nn.Module):
     def forward(self, input):
         return input.view(input.size(0), -1)
     
-def accuracy(out, labels):
-    total = 0.0
-    _,predicted = torch.max(out, 1)
-    size = len(predicted)
-    labels= torch.argmax(labels.data)
-    total += torch.sum(predicted == labels.data)
-    return total.cpu().detach().numpy()/size
 
+
+def accuracy(input:Tensor, targs:Tensor):
+    n = targs.shape[0]
+    input = input.argmax(dim=-1).view(n,-1)
+    targs = targs.view(n,-1)
+    return (input==targs).float().mean().cpu().detach().numpy()
 
 #https://pytorch.org/tutorials/beginner/transfer_learning_tutorial.html
 def imshow_transform(image_in, title=None):
